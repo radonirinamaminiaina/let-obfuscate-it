@@ -17,4 +17,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[Link to the article](https://dev.to/radonirinamaminiaina/let-obfuscate-it-optmisation-technic-gd1)
