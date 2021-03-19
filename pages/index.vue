@@ -1,27 +1,10 @@
 <template>
-  <div class="container">
-    <div :class="$style.test">
-      <Logo />
-      <h1 class="title">css-obfuscate</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <h1 :class="$style.articleTitle">Let obfuscate it</h1>
+    <p>
+      If you want to know about me, please visite
+      <a href="https://radonirina.app" target="_blank" title="">my site</a>
+    </p>
   </div>
 </template>
 
@@ -32,34 +15,16 @@ export default Vue.extend({})
 </script>
 
 <style module>
-:global(.container) :local(.test) {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.articleTitle {
+  color: #222;
+  text-align: center;
+  padding: 50px 0;
+}
+p {
   text-align: center;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+a {
+  color: rgb(20, 100, 248);
+  text-decoration: none;
 }
 </style>

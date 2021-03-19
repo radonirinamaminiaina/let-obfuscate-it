@@ -31,7 +31,7 @@ const idLocal = createUniqueIdGenerator()
 const idComponent = createUniqueIdGenerator()
 const generateScopedName = (localName, resourcePath) => {
   const componentName = resourcePath.split('/').slice(-2).join('/')
-  return idComponent(componentName).toUpperCase() + idLocal(localName)
+  return idComponent(componentName) + idLocal(localName)
 }
 
 const getLocalIdent = (context, _localIdentName, localName) =>
